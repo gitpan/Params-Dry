@@ -1,5 +1,5 @@
 ---
-abstract: unknown
+abstract: 'Simple Global Params Management System'
 author:
   - 'Pawel Guspiel <neo@cpan.org>'
 build_requires:
@@ -23,4 +23,4 @@ requires:
   Exporter: 0
   Scalar::Util: 0
   perl: 5.01
-version: 1
+version: 1.02

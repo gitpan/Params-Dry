@@ -1,5 +1,5 @@
 {
-   "abstract" : "unknown",
+   "abstract" : "Simple Global Params Management System",
    "author" : [
       "Pawel Guspiel <neo@cpan.org>"
    ],
@@ -41,5 +41,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "1"
+   "version" : "1.02"
 }
