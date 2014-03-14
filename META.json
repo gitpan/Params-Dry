@@ -1,5 +1,5 @@
 {
-   "abstract" : "Simple Global Params Management System which helps you to keep DRY rule",
+   "abstract" : "Simple Global Params Management System which helps you to keep DRY principle",
    "author" : [
       "Pawel Guspiel <neo@cpan.org>"
    ],
@@ -41,5 +41,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "1.08"
+   "version" : "1.09"
 }
