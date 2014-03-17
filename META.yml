@@ -23,4 +23,4 @@ requires:
   Exporter: 0
   Scalar::Util: 0
   perl: 5.01
-version: 1.09
+version: 1.1
