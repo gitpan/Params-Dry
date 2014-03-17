@@ -13,12 +13,11 @@ package Params::Dry::Types::Ref;
     use utf8;
 
 # --- version ---
-    our $VERSION = 1.10;
+    our $VERSION = 1.10_01;
 
 #=------------------------------------------------------------------------ { use, constants }
 
     use Params::Dry::Types qw(:const);
-    use Params::Dry::Types::Ref;
 
 #=------------------------------------------------------------------------ { module public functions }
 
@@ -132,7 +131,7 @@ Params::Dry::Types::Ref - Build-in ref types for Params::Dry - Simple Global Par
 
 =head1 VERSION
 
-version 1.10
+version 1.10.01
 
 =head1 BUILD IN TYPES
 

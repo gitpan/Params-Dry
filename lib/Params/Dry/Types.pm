@@ -14,7 +14,7 @@ package Params::Dry::Types;
     use utf8;
 
 # --- version ---
-    our $VERSION = 1.10;
+    our $VERSION = 1.10_01;
 
 #=------------------------------------------------------------------------ { use, constants }
 
@@ -87,17 +87,21 @@ package Params::Dry::Types;
         $_[0] and ref $_[0] ? FAIL : PASS;
     } #+ end of: sub Value
 
-    #+ Number - mapped types
-    *Params::Dry::Types::Int   = *Params::Dry::Types::Number::Int;
-    *Params::Dry::Types::Float = *Params::Dry::Types::Number::Float;
-    *Params::Dry::Types::Bool  = *Params::Dry::Types::Number::Bool;
+    {
+        no warnings 'once';
 
-    #+ Ref - mapped types
-    *Params::Dry::Types::Scalar = *Params::Dry::Types::Ref::Scalar;
-    *Params::Dry::Types::Array  = *Params::Dry::Types::Ref::Array;
-    *Params::Dry::Types::Hash   = *Params::Dry::Types::Ref::Hash;
-    *Params::Dry::Types::Code   = *Params::Dry::Types::Ref::Code;
-    *Params::Dry::Types::Regexp = *Params::Dry::Types::Ref::Regexp;
+        #+ Number - mapped types
+        *Params::Dry::Types::Int   = *Params::Dry::Types::Number::Int;
+        *Params::Dry::Types::Float = *Params::Dry::Types::Number::Float;
+        *Params::Dry::Types::Bool  = *Params::Dry::Types::Number::Bool;
+
+        #+ Ref - mapped types
+        *Params::Dry::Types::Scalar = *Params::Dry::Types::Ref::Scalar;
+        *Params::Dry::Types::Array  = *Params::Dry::Types::Ref::Array;
+        *Params::Dry::Types::Hash   = *Params::Dry::Types::Ref::Hash;
+        *Params::Dry::Types::Code   = *Params::Dry::Types::Ref::Code;
+        *Params::Dry::Types::Regexp = *Params::Dry::Types::Ref::Regexp;
+    };
 
 };
 0115 && 0x4d;
@@ -110,7 +114,7 @@ Params::Dry::Types - Build-in types for Params::Dry - Simple Global Params Manag
 
 =head1 VERSION
 
-version 1.10
+version 1.10.01
 
 =head1 EXPORT
 
@@ -147,6 +151,8 @@ version 1.10
 =item * B<Hash> - shortcut of Ref[Hash] or Ref::Hash
 
 =item * B<Code> - shortcut of Ref[Code] or Ref::Code
+
+=item * B<Regexp> - shortcut of Ref[Regexp] or Ref::Regexp
 
 
 =back
